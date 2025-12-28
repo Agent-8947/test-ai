@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Test Orchestrator Pro",
+  "description": "A high-performance codebase auditor that parses ZIP projects and executes 10 core technical tests using the Gemini 3 Pro model for deep logic and security analysis.",
+  "requestFramePermissions": []
+}
