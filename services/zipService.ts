@@ -13,8 +13,8 @@ export const parseZipFile = async (file: File): Promise<ProjectData> => {
       const content = await zipEntry.async('string');
       // Only include relevant code files to save tokens
       const extension = path.split('.').pop()?.toLowerCase();
-      const relevantExtensions = ['js', 'jsx', 'ts', 'tsx', 'json', 'css', 'html', 'md'];
-      
+      const relevantExtensions = ['js', 'jsx', 'ts', 'tsx', 'json', 'css', 'html', 'md', 'vue', 'svelte', 'py', 'java', 'go', 'rb', 'php', 'yml', 'yaml', 'xml', 'env', 'toml'];
+
       if (relevantExtensions.includes(extension || '')) {
         files.push({ path, content });
       }
